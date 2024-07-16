@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* active class for menu-items */
+.active{
+    @apply text-sky-500 underline underline-offset-4
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    & li{
+        margin: 0 5px;
+        
+        &.activePagination{
+            background-color: rgb(43, 207, 236);
+            border-radius: 4px;
+            color: #fff;
+        }
+    }
+
+    & a{
+        display: inline-block;
+        padding: 5px 10px ;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        text-decoration: none;
+        color: black;
+
+        &:hover{
+            background: #dfdbdb;
+        }
+    }
+}
+
+.active-button{
+    color: rgb(46, 159, 204);
+}
